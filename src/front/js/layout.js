@@ -18,6 +18,8 @@ import { Private } from "./pages/private";
 import { Profile } from "./pages/profile";
 import { Footer } from "./component/footer";
 
+import Lights from "./component/traffic_light.jsx";
+
 //create your first component
 const Layout = () => {
   //the basename is used when your project is published in a subdirectory and not in the root of the domain
@@ -32,6 +34,9 @@ const Layout = () => {
           <Switch>
             <Route exact path="/">
               <Home />
+            </Route>
+            <Route exact path="/traffic-light">
+              <Lights />
             </Route>
             <Route exact path="/signUp">
               <SignUp />
